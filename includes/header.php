@@ -11,7 +11,7 @@ if($aggiuntivo!=""){
 					<img name="logo" id="logo" src="/cambiaclima/img/logo.png" alt="Logo">
 				</div>
 				<div class="col-md-4">
-					<h1><big>NUOVO TITOLO</big></h1>
+					<h1>NUOVO TITOLO</h1>
 				</div>
 				<div class="col-md-<?php echo 4-$gr;?> d-none d-md-block text-right">
 					<p>Sito creato dalla 5°A informatica 2021/22
@@ -19,7 +19,8 @@ if($aggiuntivo!=""){
 					<a target="_blank" href="https://www.arpalombardia.it">ARPA lombardia</a> |
 					<a target="_blank" href="https://www.lifeprepair.eu/">PrepAIR</a> |
 					<a target="_blank" href="https://www.iisfalcone-righi.edu.it">IIS Falcone-Righi</a> |
-          <a target="_blank" href="https://www.github.com/tia-cima">Mattia Cimadomo</a>
+          			<!-- <a target="_blank" href="https://www.github.com/tia-cima"></a> -->
+					Mattia Cimadomo
 				</div>
         <?php
 					if($aggiuntivo!="")
