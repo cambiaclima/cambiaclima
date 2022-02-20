@@ -2,6 +2,7 @@
 	require '../includes/log.php';
 	$currentPage = 'Bacheca';
 ?>
+
 <html lang="it">
 <head>
 	<?php error_reporting(E_ALL ^ E_WARNING);
