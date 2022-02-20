@@ -25,7 +25,7 @@
 	}
 
 	if(checkLogin()){ // SISTEMA LOGIN PASSO 5
-		require 'bachecaPROVA.php';
+		require 'bachecaHTML.php';
 	}
 	else {
 		header("location: login.php");
