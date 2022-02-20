@@ -70,7 +70,7 @@
 
 				
 				<div class="col-lg-3" style="margin-top:30px">
-					<h2><p>Ultime Notizie</h2></p>
+					<h2><p>Ultime Notizie PROVA</h2></p>
 					<div class="row row-cols-1 row-cols-md-1">
 				<?php
 					//Connesione al server
