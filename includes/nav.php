@@ -18,7 +18,7 @@
 							'PrepAIR' => $dir.'prepair.php',
 							'Chi siamo?' => $dir.'chi_siamo.php',
 							'Newsletter' => $dir.'newsletter.php',
-							'Area admin' => '/cambiaclima/admin/login.php'
+							'Area admin' => '/cambiaclima/admin/bacheca.php'
 						);
 						$i=0;
 						foreach ($urls as $name => $url) {
