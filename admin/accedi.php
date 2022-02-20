@@ -11,6 +11,10 @@
   $accesso = mysqli_fetch_array($result)[0];
   if($accesso==1){
     $_SESSION["user"] = $user;
+    $info = array("Username"=>$user, "Password"=>$password);
+    $fp = fopen('temp/passwordTemp.json', 'w');
+    fwrite($fp, json_encode($info));
+    fclose($fp);
     header("location: bacheca.php");
   }else {
     header("location: login.php?log=".$accesso);

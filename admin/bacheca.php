@@ -1,54 +1,38 @@
 <?php
 	require '../includes/log.php';
 	$currentPage = 'Bacheca';
+
+	// evita che si acceda all'area admin senza avere l'autorizzazione
+	function checkLogin(){
+		require '../includes/dbconnect.php';
+
+		$sql = 'SELECT utente, password FROM `amministratore`;';
+		$result = mysqli_query($conn,$sql);
+		while($row = mysqli_fetch_assoc($result)){
+			$userDB = $row["utente"];
+			$passwordDB = $row["password"];
+		}
+		$json = file_get_contents('temp/passwordTemp.json');
+		$info = json_decode($json, true);
+		$user = $info["Username"];
+		$password = $info["Password"];
+
+		if(strcmp($user, $userDB)==0 && strcmp($password, $passwordDB)==0){
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	if(checkLogin()){
+		// $bachecaPROVA = fopen('bachecaPROVA.php', 'r');
+		// echo file_get_contents($bachecaPROVA, true);
+		// funzione che elimina il file
+		// echo readfile("bachecaPROVA.php");
+		require 'bachecaPROVA.php';
+		
+	}
+	else {
+		header("location: login.php");
+	}
 ?>
-
-<html lang="it">
-<head>
-	<?php error_reporting(E_ALL ^ E_WARNING);
-	require '../includes/head.php';?>
-</head>
-	<body>
-		<!-- Header -->
-		<?php require '../includes/header.php';?>
-		<!-- Container -->
-		<main class="container-md pt-3" role="main">
-			<div class="row row-cols-1 row-cols-lg-3 row-cols-md-2">
-			<?php
-				$urls = array(
-					'Articoli' => 'articoli/',
-					'Dati Co2' => 'dati_co2/',
-					'Agenti inquinanti' => 'inquinanti/',
-					'Glossario' => 'glossario/',
-					'Approfondimenti Scientifici' => 'approfondimenti/',
-					'SlideShow' => 'slideshow/',
-				);
-
-				foreach ($urls as $name => $url) {
-					print '<div class="col p-3">
-						<div class="card">
-						  <div class="card-header shadow-sm">
-						    <h5 class="card-title">'.$name.'</h5>
-						  </div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">
-									<a href="'.$url.'insert.php'.'" class="card-link">Aggiungi</a>
-								</li>
-								<li class="list-group-item">
-									<a href="'.$url.'modify.php" class="card-link">Modifica</a>
-								</li>
-								<li class="list-group-item">
-									<a href="'.$url.'delete.php" class="card-link">Rimuovi</a>
-								</li>
-							</ul>
-						</div>
-					</div>'."\n\t\t\t";
-				}
-			error_reporting(E_ALL ^ E_WARNING);?>
-
-			<p style="text-align:center;"> <a href="/cambiaclima/"> Torna alla home </p></a>
-
-		</div>
-		</main>
-	</body>
-</html>
