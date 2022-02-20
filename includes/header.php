@@ -11,7 +11,7 @@ if($aggiuntivo!=""){
 					<img name="logo" id="logo" src="/cambiaclima/img/logo.png" alt="Logo">
 				</div>
 				<div class="col-md-4">
-					<h1>CAMBIA CLIMA (in manutenzione)</h1>
+					<h1>CAMBIA CLIMA [in manutenzione]</h1>
 				</div>
 				<div class="col-md-<?php echo 4-$gr;?> d-none d-md-block text-right">
 					<p>Sito creato dalla 5°A informatica 2021/22
