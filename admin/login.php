@@ -20,8 +20,6 @@
 	<body>
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
-		<!-- Nav -->
-		<?php require '../includes/adminNav.php';?>
 		<!-- Container -->
 		<main class="container-md shadow-sm bg-white pt-3" role="main">
 			<?php
