@@ -1,0 +1,33 @@
+.menu{
+	background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+
+}
+
+main .navbar {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+    padding: 15px;
+}
+
+.nav-pills .nav-link.active{
+	background-color: #f2f2f2;
+}
+
+.approfondimento{
+	background-color: #f2f2f2;
+	border-radius: 10px;
+    padding: 20px;
+}
+
+.text{
+	padding: 20px;
+}
+
+iframe{
+	overflow:hidden;
+}
+
+

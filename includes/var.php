@@ -1,0 +1,5 @@
+<?php
+	$metaTags = '';
+	$currentPage = '';
+	$aggiuntivo="";
+?>

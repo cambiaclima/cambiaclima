@@ -1,0 +1,1 @@
+<?php $IDArt=201;?><?php require "blank_article.php";?>
