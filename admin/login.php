@@ -40,7 +40,7 @@
 								</div>';
 				}
 			?>
-			<form action="accedi.php" method="POST" class="form-group">
+			<form action="accedi.php" action="loginCheck.php" method="POST" class="form-group">
               <label for="user">Nome utente</label>
 							<div class="input-group">
 				        <div class="input-group-prepend">
