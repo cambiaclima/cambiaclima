@@ -3,7 +3,7 @@
 	$currentPage = 'Bacheca';
 
 	// evita che si acceda all'area admin senza avere l'autorizzazione
-	function checkLogin(){
+	function checkLogin(){ // SISTEMA LOGIN: PASSO 4
 		require '../includes/dbconnect.php';
 
 		$sql = 'SELECT utente, password FROM `amministratore`;';
@@ -24,13 +24,8 @@
 		}
 	}
 
-	if(checkLogin()){
-		// $bachecaPROVA = fopen('bachecaPROVA.php', 'r');
-		// echo file_get_contents($bachecaPROVA, true);
-		// funzione che elimina il file
-		// echo readfile("bachecaPROVA.php");
+	if(checkLogin()){ // SISTEMA LOGIN PASSO 5
 		require 'bachecaPROVA.php';
-		
 	}
 	else {
 		header("location: login.php");

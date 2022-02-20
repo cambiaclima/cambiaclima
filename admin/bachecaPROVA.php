@@ -1,6 +1,5 @@
 
 <?php
-
 require '../includes/log.php';
 $currentPage = 'Bacheca';
 ?>
@@ -11,18 +10,17 @@ $currentPage = 'Bacheca';
 	require '../includes/head.php';?>
 </head>
 <script>
-    function logout(){
+    function logout(){ // SISTEMA LOGIN: PASSO 7
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("main-container").innerHTML = '<p style=text-align:center;"> <a href="/cambiaclima/"> Logout eseguito, torna alla home </p></a>';
+                document.getElementById("main-container").innerHTML = '<p style=text-align:center;"> <a href="/cambiaclima/"> Logout eseguito, torna alla home </p></a>'; // SISTEMMA LOGIN: PASSO 9
             }
         };
         xhttp.open("GET", "logout.php");
         xhttp.send();
     }
 </script>
-
 	<body>
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
@@ -62,7 +60,7 @@ $currentPage = 'Bacheca';
 			error_reporting(E_ALL ^ E_WARNING);?>
 
 			<p style="text-align:center;"> <a href="/cambiaclima/"> Torna alla home </p></a>
-            <input type="button" onclick=logout() value="Logout">
+            <input type="button" onclick=logout() value="Logout"> <!-- SISTEMA LOGIN: PASSO 6-->
 		</div>
 		</main>
 	</body>
