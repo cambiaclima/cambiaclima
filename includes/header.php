@@ -1,8 +1,8 @@
 <?php
 $gr=0;
-if($aggiuntivo!=""){
-  $gr=1;
-}
+// if($aggiuntivo!=""){
+//   $gr=1;
+// }
 
 ?>
 <header class="container-fluid" style="margin-bottom:0; background-color: #f2f2f2;">
@@ -23,8 +23,8 @@ if($aggiuntivo!=""){
 					Mattia Cimadomo
 				</div>
         <?php
-					if($aggiuntivo!="")
-						print '<div class="col-md-2 d-none d-md-block text-right" style="max-height: 150px;">'.$aggiuntivo.'</div>';
+					// if($aggiuntivo!="")
+					// 	print '<div class="col-md-2 d-none d-md-block text-right" style="max-height: 150px;">'.$aggiuntivo.'</div>';
 				?>
 			</div>
 		</header>

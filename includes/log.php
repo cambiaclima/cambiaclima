@@ -1,6 +1,6 @@
 <?php
-  session_start();
-  if (!isset($_SESSION["user"])){
-    header("location: login.php?accesso=0");
-  }
+  // session_start();
+  // if (!isset($_SESSION["user"])){
+  //   header("location: login.php?accesso=0");
+  // }
 ?>
