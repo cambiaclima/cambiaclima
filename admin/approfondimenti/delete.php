@@ -62,7 +62,6 @@
 							}
 						}
 						$conn->close();
-					  mysqli_close($conn);
 						?>
 					  </tbody>
 					</table>
