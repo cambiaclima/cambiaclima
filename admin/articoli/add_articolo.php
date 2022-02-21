@@ -25,15 +25,17 @@
       exit();
   }
   echo ("Articolo aggiunto");
+  header("insert.php");
+
   //Creazione Cartella
   $sql="SELECT IDArt FROM articolo where Titolo = '".$titolo."' AND breve_descr = '".$breve_descr."' AND contenuto = '".$contenuto."' AND immagine = '".$immagine."' AND data_pubbli = CURDATE();";
   $result = mysqli_query($conn,$sql);
   $IDArt = mysqli_fetch_array($result)[0];
-  mkdir('/cambiaclima/articoli/'.$IDArt);
+  mkdir('../../articoli/'.$IDArt);
   require 'upload.php';
 
   // require generate page
-  $myfile = fopen("cambiaclima/admin/articoli/".$IDArt.".php", "w") or die("Unable to open file!");
+  $myfile = fopen("../../articoli/".$IDArt.".php", "w") or die("Unable to open file!");
   $txt = '<?php $IDArt='.$IDArt.';?>';
   fwrite($myfile, $txt);
   $txt = '<?php require "blank_article.php";?>';
