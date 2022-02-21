@@ -18,6 +18,7 @@
 							'PrepAIR' => $dir.'prepair.php',
 							'Chi siamo?' => $dir.'chi_siamo.php',
 							'Newsletter' => $dir.'newsletter.php',
+							'Giochi' => $dir.'giochi.php',
 							'Area admin' => '/cambiaclima/admin/bacheca.php'
 						);
 						$i=0;
