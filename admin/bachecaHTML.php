@@ -61,6 +61,7 @@ $currentPage = 'Bacheca';
 
 			<p style="text-align:center;"> <a href="/cambiaclima/"> Torna alla home </p></a>
             <input type="button" onclick=logout() value="Logout"> <!-- SISTEMA LOGIN: PASSO 6-->
+			<p style="text-align:center;">RICORDARSI DI FARE IL LOGOUT PRIMA DI USCIRE DA QUESTA PAGINA<br>PER EVITARE DI LASCIARE LA SESSIONE APERTA PUBBLICAMENTE</p>
 		</div>
 		</main>
 	</body>
