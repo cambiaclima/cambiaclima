@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blackjack Online</title>
+    <title>Blackjack cambiaclima</title>
     <link rel="icon" href="images/blackjack.png">
     <link rel="stylesheet"  type="text/css" href="css/style.css">
     <link rel="stylesheet"  type="text/css" href="css/card.css">
@@ -11,13 +11,13 @@
     .box{ 
         width:1000px; 
         height:90%; 
-        background-color: #113300;
+        background-color: #243447;
     } 
 </style>
 <body>
-    <div id="particles-js">
 
-        <div class="box">   
+        <div class="box"> 
+            <p>BLACKJACK CAMBIA CLIMA</p><br>
             <div class="opponent_box" id="opponent_box">
                 <div class="card_container" id="first_opponent_card"></div>
                 <div class="card_container" id="second_opponent_card"></div>                
@@ -30,18 +30,17 @@
             </div>
         </div>
 
-        <div id="score_box" style="z-index: 1; margin-left:3px; background-color: #113300; border-radius:15px; height: 48%;">
+        <div id="score_box" style="z-index: 1; margin-left:3px; margin-top:10%; background-color: #243447; border-radius:15px; height: 48%;">
             <p>CPU ha:</p>
             <div class="score" id="score_opponent" style="margin-top: 20px;"></div><br>
             <p>Tu hai:</p>
             <div class="score" id="score_user" style="margin-bottom: 20px;"></div>   
-            <input type="button" value="Nuova partita" class="choice" style="width: 107px; height: 40px;" onclick="location.reload();"><br><br><br><br><br>
-            <a href="home.html"><input type="button" value="Menu principale" class="choice" style="width: 107px; height: 40px;"></a>
+            <input type="button" value="Nuova partita" class="choice" style="width: 107px; height: 40px;" onclick="location.reload();"><br><br><br>  
+            <a href="howtoplay.html"> <input type="button" value="Tutorial" id="boxAbout" class="choice" style="width: 107px; height: 40px;"></a><br><br><br> 
+            <a href="https://www.pokerstarscasino.it/games/blackjack/rules/?no_redirect=1"> <input type="button" value="Regole del BJ" id="boxHowToPlay" class="choice" style="width: 107px; height: 40px;"></a>
         </div>
-    </div>
 
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+
     <script type="text/javascript" src="js/firstCards.js"></script>
     <script type="text/javascript" src="js/userAction.js"></script>
     <script type="text/javascript" src="js/opponentAction.js"></script>

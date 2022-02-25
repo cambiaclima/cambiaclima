@@ -22,7 +22,7 @@
             </div>
             <br><br><br>
             <a href='games/pratofiorito/index.html'>gioca a prato fiorito</a> <br><br><br>
-            <a href='games/blackjack/home.html'>gioca al blackjack</a>
+            <a href='games/blackjack/newplay.html'>gioca al blackjack</a>
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>
