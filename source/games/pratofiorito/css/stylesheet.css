@@ -13,7 +13,7 @@ p {
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #243447;
 }
 
 h1 {
@@ -126,17 +126,17 @@ h3 {
 
 #nav .menu a {
   padding: 20px;
-  background: orange;
+  background: #243447;
   margin-right: 2px;
 }
 
 #nav .menu a:hover {
-  background-color: #ffb424;
+  background-color: #243447;
   box-shadow: 0 1px 1px #666;
 }
 
 #nav .menu a:active {
-  background-color: #ff8f00;
+  background-color: #243447;
 }
 
 #footer {
@@ -247,7 +247,7 @@ canvas,
   height: 24px;
   border: 0;
   box-shadow: inset -1px -1px 0 lightgray;
-  background: orange;
+  background: #243447;
   cursor: pointer;
 }
 
@@ -255,7 +255,7 @@ canvas,
   width: 23px;
   height: 24px;
   border: 0;
-  background: orange;
+  background: #243447;
   box-shadow: inset -1px -1px 0 lightgray;
   cursor: pointer;
 }
@@ -278,8 +278,8 @@ input[type=range]::-moz-focus-outer {
 }
 
 #alertBox {
-  width: 350px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   background-color: #fff;
   border-radius: 7px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);

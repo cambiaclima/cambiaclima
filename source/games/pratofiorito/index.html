@@ -8,7 +8,7 @@
     <meta content="Basic Minesweeper game in Javascript" name="description">
     <meta content="https://github.com/Sylhare/Minesweeper" name="link">
 
-    <title> MineSweeper</title>
+    <title>Prato Fiorito</title>
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
@@ -23,13 +23,13 @@
 <body>
 
 <div class="flex-parent" id="page">
-    <h1 class="title">Prato fiorito</h1>
+    <h1 class="title">Prato fiorito ufficiale cambiaclima</h1>
 
     <!-- navigation panel -->
     <div class="flex-nav-container" id="nav">
         <div class="item-1">
             <div id="game-info">
-                <img alt="mine" id="mine-img" src="img/mine.svg">
+                <img alt="mine" id="mine-img" src="img/flame.png">
                 <!-- <span id="mines" class="info">8</span> -->
             </div>
             <div class="timer menu">
@@ -41,14 +41,14 @@
         <div class="separator"></div>
         <div>
             <div class="menu" onclick="show('minesweeper-game');"><a class="button">Gioca</a></div>
-            <div class="menu" onclick="show('settings');"><a class="button">Impostazioni</a></div>
+            <!-- <div class="menu" onclick="show('settings');"><a class="button">Impostazioni</a></div> -->
             <div class="menu" onclick="show('info');"><a class="button"> Info </a></div>
         </div>
     </div>
 
     <!-- Minesweeper game  -->
     <div class="container flex-container">
-        <div class="content" id="settings" style="display: none;">
+        <!-- <div class="content" id="settings" style="display: none;">
             <h2>Settings</h2>
             <p>
                 You can configure the minesweeper here. Once you've changed the parameters go back to the
@@ -70,23 +70,18 @@
                 <p>Big</p>
             </div>
 
-        </div>
+        </div> -->
         <div class="content" id="info" style="display: none;">
             <h2>Info</h2>
 
-            <p>This game is a minesweeper, you win be unveiling all case that does <b>not</b> contain a mine.</p>
+            <p>Gioca a prato fiorito, vinci svelando tutte le caselle che non contengono una fiamma.</p>
             <ul>
-                <li>You lose if you click on a mine <img alt="mine" class="img-info" src="./img/mine.svg"></li>
-                <li>You can flag <img alt="flag" class="img-info" src="./img/flag.svg"> zones of the board by
-                    right-clicking
+                <li>Se clicchi su una fiamma <img alt="mine" class="img-info" src="./img/flame.png"> hai perso</li>
+                <li>Puoi contrassegnare <img alt="flag" class="img-info" src="./img/tree.png"> le caselle del tabellone facendo clic con il pulsante destro
                 </li>
-                <li>The number on the zone <img alt="zone" class="img-info" src="./img/zone.png"> indicates the number
-                    of mine(s) nearby
+                <li>Il numero della casella <img alt="zone" class="img-info" src="./img/zone.png"> indica il numero di fiamme nelle vicinanze
                 </li>
             </ul>
-            <br>
-            <p>The game test page is available <a href="./tests/tests.html">here</a>.</p>
-
         </div>
         <div id="minesweeper-game">
 
@@ -94,7 +89,6 @@
             <div id="alertContainer">
                 <div class="center" id="alertBox">
                     <!--<h1 id="customAlert-title" class="">Alert</h1>-->
-                    <img alt="alert" class="alertBox-img" id="alert-img" src="">
                     <p id="customAlert-content">message</p>
                     <a class="button" href="#" onclick="removeAlert()">Ok</a>
                 </div>

@@ -2,8 +2,8 @@ let board;
 const timer = new Timer();
 const WIN = {
   name: "win",
-  //img: "../img/trophy.svg" // uncomment if on a local server
-  text: ["Congratulation!", "br", "you beat the game!"]
+  img: "img/trophy.svg", // uncomment if on a local server
+  text: ["Congratulazioni!", "br", "hai vinto!"]
 };
 const LOSE = {
   name: "lose",
