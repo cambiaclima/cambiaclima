@@ -19,7 +19,7 @@
 							'Chi siamo?' => $dir.'chi_siamo.php',
 							'Newsletter' => $dir.'newsletter.php',
 							'Giochi' => $dir.'giochi.php',
-							'Area admin' => '/cambiaclima/admin/bacheca.php'
+							'Area admin' => '/cambiaclima/admin/login.php'
 						);
 						$i=0;
 						foreach ($urls as $name => $url) {
