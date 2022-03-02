@@ -1,7 +1,7 @@
 <?php require '../includes/var.php';?>
 <?php
 	$metaTags = 'tags da aggiungere';
-	$currentPage = 'Chi siamo?';
+	$currentPage = 'Donut';
 ?>
 <html lang="it">
 	<head>
