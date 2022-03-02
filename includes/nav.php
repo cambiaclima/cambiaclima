@@ -19,6 +19,7 @@
 							'Chi siamo?' => $dir.'chi_siamo.php',
 							'Newsletter' => $dir.'newsletter.php',
 							'Giochi' => $dir.'giochi.php',
+							'Donut' => $dir.'donut.php',
 							'Area admin' => '/cambiaclima/admin/login.php'
 						);
 						$i=0;
