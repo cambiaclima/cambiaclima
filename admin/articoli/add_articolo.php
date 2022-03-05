@@ -10,8 +10,11 @@
   $conn->set_charset("utf8");
 
   $titolo=$_POST['titolo'];
+  $titolo = mysqli_real_escape_string($conn, $titolo);
   $breve_descr=$_POST['breve_descr'];
+  $breve_descr = mysqli_real_escape_string($conn, $breve_descr);
   $contenuto=$_POST['contenuto'];
+  $contenuto = mysqli_real_escape_string($conn, $contenuto);
   $immagine= preg_replace('/\s+/', '', basename($_FILES["fileToUpload"]["name"]));
 
 
