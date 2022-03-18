@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/cambiaclima/css/styleNav.css?<?echo filemtime('../css/styleNav.css');?>">
 <nav class="navbar navbar-expand-lg sticky-top navbar-light ">
-<img src="../img/logo.jpeg" class="img-fluid" alt="Responsive image" width="50" height="50">
+<img src="img/logo.png" class="img-fluid" alt="Responsive image" width="50" height="50">
 	<p id="p1"  class="p1"> CAMBIA CLIMA
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
