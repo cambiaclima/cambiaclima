@@ -1,22 +1,20 @@
-.p1{
-    font-family: myFirstFont;
-    color: black;
-    font-size: 20pt
-  }
-  
-  @font-face {
-    font-family: myFirstFont;
-    src: url(font/font.ttf);
-    font-weight: bold;
-  }
-  
-  .image {
-    
-    height: 50px;
-    width: 50px;
-  }
-  
-  nav
-  {	font-family: myFirstFont;
-      background-color: rgba(255,255,255,0.5);
-  }
+@font-face {
+  font-family: myFirstFont;
+  src: url(font/font.otf);
+}
+
+
+.image {
+
+  height: 50px;
+  width: 50px;
+}
+
+.navbar
+{    font-family: myFirstFont;
+    background-color: rgba(255,255,255,1);
+    padding:.8rem;
+}
+.navbar-nav li{
+  padding-right: 20px
+}

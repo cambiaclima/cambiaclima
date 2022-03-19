@@ -10,7 +10,7 @@
 		<!-- Header hihihiha -->
 		<?php require 'includes/header.php';?>
 
-		<div class="bg-image" style="background-image: url('img/back1.jpeg');">
+		<div class="bg-image" style="background-image: url('img/back1.png');">
 		
 		 <!-- NavBar -->
 		<?php require 'includes/nav.php';?>
@@ -18,7 +18,7 @@
 		<!-- Main -->
 		<main class="container-md" role="main">
 			<div class="row" >
-				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0.5);">
+				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0.4);">
 					<!-- Slides -->
 					<?php
 					//Connessione al server

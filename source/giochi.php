@@ -11,6 +11,7 @@
         ?>
 	</head>
 	<body>
+	<div class="bg-image" style="background-image: url('img/back1.jpeg');">
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
 		<!-- NavBar -->
@@ -26,5 +27,6 @@
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>
+		</div>
 	</body>
 </html>
