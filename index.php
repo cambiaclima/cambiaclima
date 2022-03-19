@@ -18,7 +18,7 @@
 		<!-- Main -->
 		<main class="container-md" role="main">
 			<div class="row" >
-				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0.4);">
+				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0);">
 					<!-- Slides -->
 					<?php
 					//Connessione al server
@@ -56,7 +56,7 @@
 									<a href="articoli/'.$row["IdArt"].'.php"><h5>'.$row["Titolo"].'</h5></a>
 									'.$row["breve_descr"].'
 								</div>
-							</div>'."\n";				
+							</div>'."\n";
 						}
 						print '</div>
 							<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -74,7 +74,7 @@
 
 				
 				<div class="row-lg-3" style="margin-top:30px">
-					<h2><p>Ultime Notizie</h2></p>
+					<h2><p  style="color:white;">Ultime Notizie</h2></p>
 					<div class="row row-cols-1 row-cols-md-1">
 				<?php
 					//Connesione al server
