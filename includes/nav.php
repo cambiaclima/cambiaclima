@@ -8,7 +8,7 @@
 		<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"  id="collapsibleNavbar">
 			<ul class="navbar-nav ml-auto text-right">
 				<?php
-					// Define each name associated with an URL pppp
+					// Define each name associated with an URL
 					$dir="/cambiaclima/source/";
 					$urls = array(
 						'Home' => $dir.'../',
