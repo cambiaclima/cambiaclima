@@ -7,7 +7,7 @@
 	<?php require 'includes/head.php';?>
 </head>
 	<body>
-		<!-- Header hihihiha -->
+		<!-- Header -->
 		<?php require 'includes/header.php';?>
 
 		<div class="bg-image" style="background-image: url('img/back1.png');">
