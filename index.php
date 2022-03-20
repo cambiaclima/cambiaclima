@@ -18,7 +18,7 @@
 		<!-- Main -->
 		<main class="container-md" role="main">
 			<div class="row" >
-				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0);">
+				<div class="col shadow-sm mr-2 p-3 rounded" style="background-color: rgba(255,255,255,0); ">
 					<!-- Slides -->
 					<?php
 					//Connessione al server
@@ -50,7 +50,7 @@
 								$active = 'active';
 							print '<div class="carousel-item '.$active.'">
 								<div style="background: url(articoli/'.$row["IdArt"].'/'.$row["immagine"].') no-repeat center;
-									background-size:cover;" class="d-block w-100 h-100" alt="...">
+									background-size:cover;" class="d-block w-100 h-100 rounded"  alt="...">
 								</div>
 								<div class="carousel-caption d-none bg-dark d-md-block text-white">
 									<a href="articoli/'.$row["IdArt"].'.php"><h5>'.$row["Titolo"].'</h5></a>
@@ -95,9 +95,9 @@
 										<p class="card-text"><small class="text-muted">Ultimo aggiornamento: '.$row["data_pubbli"].'</small></p>
 									</div>
 									</div>
-									<div class="col-sm-4">
+								<div class="col-sm-4">
 									<div style="background: url(articoli/'.$row["IdArt"].'/'.$row["immagine"].') no-repeat center;
-										background-size:cover;" class="card-img-top w-100 h-100"></div>
+										background-size:cover; "  class="card-img-top w-100 h-100"  ></div>
 									</div>
 									</div>
 									</a>
