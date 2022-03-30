@@ -37,13 +37,14 @@
                       ?>
       </p>
       		<a href="CO2Tracker.apk">
-              <img src="/cambiaclima/img/iconapp.jfif" height="100px" style="
-                  height: 150px;
-              ">Scarica APK
+            Scarica APK
+            <br><br>
             </a>
               <p><?php print nl2br('1. Clicca su "scarica APK" dal tuo dispositivo mobile. Il download avverrà in automatico.
-2. Una volta scaricato il file, basta aprirlo per far partire'." l'installazione. (P.S. il file è sicuro)
-3. Divertiti!");?></p>
+                                    2. Una volta scaricato il file, basta aprirlo per far partire'." l'installazione. (P.S. il file è sicuro)
+                                    3. Divertiti!");
+                  ?>
+              </p>
             <div class="alert alert-warning fade show" role="alert">
               <strong>Attenzione! </strong> Questa applicazione necessita del sistema operativo Android 6 o superiori. Controlla se il tuo dispositivo è adatto prima di scaricare il file.
             </div>
