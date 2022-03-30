@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calcolatore </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container bg-info text-white rounded-lg text-center'>
+        <h1>Carbon Emmision Calculator</h1>
+        <h3>Quanti kilometri compie con un litro?</h3>
+        <input id='kml' type='number' value='0' />
+        <h3>Quale è il numero di chilometri che si vogliono percorrere?</h3>
+        <input id='dist' type='number' value='0' />
+        <h3>Che alimentazione utilizza?(Benzina, Diesel o GPL)</h3>
+        <form action=''>
+            <select name="select" id="select">
+                <option value='1'>Benzina</option>
+                <option value='2'>Diesel</option>
+                <option value='3'>GPL</option>
+            </select>
+        </form>
+       
+        <br />
+        <br />
+        <button class='btn-secondary rounded-sm' onclick='calcCO2()'>Calcolo il totale delle emissioni di CO2</button>
+        <br />
+        <br />
+    </div>
+    <br />
+    <div class='container text-center'>
+        <h2>La CO2 emessa per per km è:</h2>
+        <h1 id='result2' class='bg-success rounded-lg'></h1>
+        <h3>kg CO2 / km</h3>
+        <br />
+        <h2>In tutto l'auto ha emesso:</h2>
+        <h1 id='result' class='bg-success rounded-lg'></h1>
+        <h3>kg CO2</h3>
+        <h2>Un auto elettrica avrebbe invece emesso:</h2>
+        <h1 id='result3' class='bg-success rounded-lg'></h1>
+        <h3>kg CO2</h3>
+    </div>
+
+    <script>
+
+        var kml = document.getElementById('kml');
+        var dist = document.getElementById('dist');
+        var select = document.getElementById('select');
+       
+
+
+
+        function calcCO2() {
+            var option = select.options[select.selectedIndex];
+            var x = kml.value;
+            var y = dist.value;
+            var al = option;
+            let c = 2.6;
+            var e = 7;
+            console.log(c)
+            if (al.value == '1') {
+                c = 2.34;
+                console.log("Passato 1");
+            }
+            else if (al.value == '2') {
+                c = 2.6;
+                console.log("Passato 2");
+            }
+            else if (al.value == '3') {
+                c = 1.6;
+                console.log("Passato 3");
+            }
+            
+            var calc2 = (c * x);
+            calc2.toFixed(2);
+            var calc = (calc2 * y).toFixed(2);
+            var calc3 = (y * (0.284 * 0.346)).toFixed(2);
+
+            console.log('calc is: ' + calc);
+            document.getElementById('result').innerHTML = calc;
+            document.getElementById('result2').innerHTML = calc2;
+            document.getElementById('result3').innerHTML = calc3;
+        }
+
+    </script>
+</body>
+</html>

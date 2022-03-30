@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calcolatore </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6.cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container bg-info text-white rounded-lg text-center'>
+        <h1>Calcolatore di Co2</h1>
+        <h3>Quanti kilometri percorri in auto in una settimana?</h3>
+        <input id='auto' type='number' value='0' />
+        <h3>Quanti kilometri percorri in scooter in una settimana?</h3>
+        <input id='scooter' type='number' value='0' />
+        <h3>Quanti kilometri percorri in autobus in una settimana?</h3>
+        <input id='autobus' type='number' value='0' />
+        <h3>Quanti kilometri percorri in tram in una settimana?</h3>
+        <input id='tram' type='number' value='0' />
+         <h3>Quanti kilometri percorri in treno settimana?</h3>
+        <input id='treno' type='number' value='0' />
+        <h3>Quanti chilogrammi di  carne consumi in una settimana?</h3>
+        <input id='carne' type='number' value='0' />
+        <h3>Quanti chilogrammi di  pasta consumi in una settimana?</h3>
+        <input id='pasta' type='number' value='0' />
+
+        <br />
+        <br />
+        <button class='btn-secondary rounded-sm' onclick='calcCO2()'>Calcolo il totale delle emissioni di CO2</button>
+        <br />
+        <br />
+    </div>
+    <br />
+    <div class='container text-center'>
+   
+        <h2>Co2 emessa al mese:</h2>
+        <h1 id='result' class='bg-success rounded-lg'></h1>
+        <h3>kg CO2</h3>
+        <h2>Albero da piantare:</h2>
+        <h1 id='result1' class='bg-success rounded-lg'></h1>
+        <h3>kg CO2</h3>
+    </div>
+
+    <script>
+
+        var auto = document.getElementById('auto');
+        var scooter = document.getElementById('scooter');
+        var autobus = document.getElementById('autobus');
+        var tram = document.getElementById('tram');
+        var treno = document.getElementById('treno');
+        var pasta = document.getElementById('pasta');
+        var carne = document.getElementById('carne');
+     
+        function calcCO2() {
+            var aut=auto.value;
+            var sco = scooter.value;
+            var autob = autobus.value;
+            var tra = tram.value;
+            var tren = treno.value;
+            var carn = carne.value;
+            var past = pasta.value;
+            let comp="";
+            var risultato=(aut*0.32+sco*0.11+autob*0.1+tra*0.04+carn*2.5+past*0.27+tren*0.04)*4;
+           
+            if(risultato<10 || risultato<54){
+                comp="Banano";
+               }else if( risultato<99){
+                 comp="Caffe'";
+                   }else if( risultato<199){
+                    comp="Moringa";
+                   } else if( risultato<499){
+                       comp="Cedro";
+                     }else if( risultato<699){
+                        comp="Mango";
+                         }else if(risultato<1999){
+                             comp="Fromager";
+                          }else if(risultato>3000){
+                             comp="Baobab";
+                          }
+            document.getElementById('result').innerHTML = risultato;
+            document.getElementById('result1').innerHTML = comp;
+        }
+
+    </script>
+</body>
+</html>
