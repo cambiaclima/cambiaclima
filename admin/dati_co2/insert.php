@@ -3,6 +3,7 @@
 	$currentPage = 'Inserimento Dati Co2';
 ?>
 <html lang="it">
+<link rel="stylesheet" href="/cambiaclima/css/styleInsert.css">
 <head>
 	<?php require '../../includes/head.php';?>
 </head>

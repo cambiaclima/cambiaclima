@@ -21,7 +21,7 @@
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm bg-white pt-3" role="main">
+		<main class="container-md shadow-sm pt-3" role="main">
 			<?php
 				if($log==0){
 					print '<div class="alert alert-warning alert-dismissible fade show" role="alert">

@@ -23,7 +23,7 @@
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm bg-white py-md-3 px-md-5" role="main">
+		<main class="container-md shadow-sm py-md-3 px-md-5" role="main">
       <div id = "header" align = "center"><!--#header, dove c'è il titolo-->
         <h1>PrepAir</h1>
 			</div>

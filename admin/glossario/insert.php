@@ -3,7 +3,9 @@
 	$currentPage = 'Inserimento termine glossario';
 ?>
 <html lang="it">
+<link rel="stylesheet" href="/cambiaclima/css/styleInsert.css">
 <head>
+	
 	<?php require '../../includes/head.php';?>
 </head>
 	<body>

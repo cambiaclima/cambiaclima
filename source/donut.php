@@ -20,7 +20,8 @@
                 -webkit-align-items: center;
                 align-items: center;
                 justify-content: center;
-                width: 34%;
+                width: 40%;
+                padding-top: 140;
             }
         </style>
 	</head>
@@ -30,7 +31,7 @@
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-        <div class="container" style="background:black;">
+        <div class="container" style="background:transparent;">
             <pre style="color:white;" class="center" id="d"></pre>
         </div>
         <script src="donut.js"></script>

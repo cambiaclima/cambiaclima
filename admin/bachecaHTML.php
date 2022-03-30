@@ -41,7 +41,7 @@ $currentPage = 'Bacheca';
 					print '<div class="col p-3">
 						<div class="card">
 						  <div class="card-header shadow-sm">
-						    <h5 class="card-title">'.$name.'</h5>
+						    <h5 class="card-title" style="color:#403F3F;">'.$name.'</h5>
 						  </div>
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item">

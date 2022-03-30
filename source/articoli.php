@@ -46,6 +46,10 @@ $metaTags = 'Visualizzazione degli articoli';
 	<head>
 		<?php require '../includes/head.php';?>
 		<style>
+		.card{
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 20px;
+		}
 		.immagine{
 			height: 250px;
 		}
@@ -182,20 +186,7 @@ $metaTags = 'Visualizzazione degli articoli';
 				?>
 				<div class="col-md-1"></div>
 			</div>
-			<ul class="pagination justify-content-center">
-				<li class="page-item">
-					<a class="page-link" href="?pageno=1">Prima</a>
-				</li>
-				<li class="<?php echo (($pageno <= 1) ? 'page-item disabled': 'page-item'); ?>">
-					<a class="page-link" href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>">Precedente</a>
-				</li>
-				<li class="<?php echo (($pageno >= $total_pages) ? 'page-item disabled': 'page-item'); ?>">
-					<a class="page-link" href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>">Successiva</a>
-				</li>
-				<li class="page-item">
-					<a class="page-link" href="?pageno=<?php echo $total_pages; ?>">Ultima</a>
-				</li>
-			</ul>
+
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>

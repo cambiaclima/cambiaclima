@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+ background-image: url("/cambiaclima/img/back1.png");
+background-repeat: no-repeat;
+background-position: center;
+background-repeat: repeat-y;
+background-size: cover;
+color: white;
+}
+@font-face {
+font-family: sans-serif;
+src: url(font/font.otf);
+font-weight: bold;
+}
+
+.image {
+
+height: 50px;
+width: 50px;
+}
+
+.navbar
+{	font-family: sans-serif;
+  background-color: rgba(255,255,255,1);
+  padding:.8rem;
+}
+.navbar-nav li{
+padding-right: 20px
+}
+
+nav{
+background-color:#243447;
+}
+
+main{
+min-height: 500px;
+margin: 20;
+}
+.container-md{
+top: 30px;
+background-color: rgba(0,0,0,0.2);
+border-radius: 20px;
+}
+
+.dropdown-menu{
+background-color:#243447;
+}
+.dropdown-menu a{
+color:rgba(255,255,255,.5);
+}
+.dropdown-menu a:hover{
+color:white;
+background-color:#28a745;
+}
+
+main{
+    min-height: 500px;
+    margin: 40;
+    color: white;
+    }
+    .container-md{
+    top: 30px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    }
+    main h1{
+    padding: 30px 0 15 0;
+    
+    }
+    main h2{
+    padding: 30px 0 15 0;
+    }
+    main form{
+    border-radius: 10px;
+    border: 2px solid white;
+      padding: 15;
+      margin: 10;
+    }

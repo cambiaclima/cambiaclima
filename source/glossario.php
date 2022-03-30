@@ -21,7 +21,7 @@ $currentPage = 'Glossario';
 <html lang="it">
   <head>
     <?php require '../includes/head.php';?>
-    <link rel="stylesheet" href="../css/stylePage.css?<?=filemtime('../css/stylePage.css');?>">
+    <link rel="stylesheet" href="../css/styleGlossario.css?<?=filemtime('../css/styleGlossario.css');?>">
     <style>
 		.flip-card {
 		  background-color: transparent;
@@ -79,7 +79,7 @@ $currentPage = 'Glossario';
     <!-- NavBar -->
     <?php require '../includes/nav.php';?>
     <!-- Container -->
-    <main role="main" class="container-md shadow-sm bg-white py-md-3 px-md-3 pr-sm-1">
+    <main role="main" class="container-md shadow-sm py-md-3 px-md-3 pr-sm-1">
       <div id = "title" class = "row">
         <div class = "col" align = "center">
           <h1>Glossario</h1>
@@ -89,7 +89,7 @@ $currentPage = 'Glossario';
       <div id = "contenuto" class = "row">
         <div class = "col-4 col-md-3 menu" id = "form_termini" align="left">
           <div class = "row" id = "title_ricerca" align = "center">
-            <div class="col">
+            <div id="trova" class="col">
               <h5>Trova il termine che stai cercando</h5>
             </div>
           </div>

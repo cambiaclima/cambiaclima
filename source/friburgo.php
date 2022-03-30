@@ -59,7 +59,7 @@
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-		<main role="main" class="container-md shadow-sm bg-white py-md-3 px-md-5 pr-sm-1">
+		<main role="main" class="container-md shadow-sm py-md-3 px-md-5 pr-sm-1">
 			<div id = "title" class = "row">
 				<div align = "center" class = "col-12">
 					<h1>Friburgo</h1>

@@ -7,15 +7,17 @@
 <html lang="it">
 <html lang="it">
 	<head>
+	<link rel="stylesheet" href="/cambiaclima/css/styleCo2.css?<?echo filemtime('../css/styleCo2.css');?>">
 			<?php require '../includes/head.php';?>
 	</head>
-	<body>
+	<body>	
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
+
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm bg-white" role="main">
+		<main class="container-md shadow-sm" role="main">
 
 			<h1>CALCOLA LA CO2 PRODOTTA NEL MONDO E DA TE STESSO</h1>
 
@@ -186,7 +188,9 @@
 				<input class="btn btn-primary" type="submit" id="tasto_uno" name="invia_uno" value="Calcola"/>
 			</form>
 		</main>
-		<!-- Footer -->
+		 <!--Footer -->
 		<?php require '../includes/footer.php';?>
+
+	
 	</body>
 </html>

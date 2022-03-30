@@ -16,7 +16,7 @@
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm bg-white" role="main">
+		<main class="container-md shadow-sm" role="main">
             <div class="jumbotron text-right rounded-0 align-bottom" style="margin-bottom:0; background-color: #f2f2f2;">
                 <div class="row">
                     <div class="col">

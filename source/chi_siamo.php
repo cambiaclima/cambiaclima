@@ -10,13 +10,13 @@
           require '../includes/popover.php';
         ?>
 	</head>
-	<body>
+	<body ">
 		<!-- Header -->
 		<?php require '../includes/header.php';?>
 		<!-- NavBar -->
 		<?php require '../includes/nav.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm bg-white" role="main">
+		<main class="container-md shadow-sm" role="main">
       <div id = "header" align = "center"><!--#header, dove c'è il titolo-->
         <h1>Chi siamo?</h1>
 			</div>

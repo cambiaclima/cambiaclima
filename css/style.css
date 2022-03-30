@@ -1,51 +1,41 @@
-body{
-	font-family: myFirstFont;
-	background-image: 'img/back1.jpeg';
-}
-nav{
-	background-color:#243447;
-}
-
 main{
-	min-height: 500px;
+	margin-top: 7%;
 }
 
-main form{
-	background-color:#f2f2f2;
-	border-radius: 10px;
-  padding: 15;
+#facilities{
+	padding: 10px 0px;
+	padding-bottom: -0px;
 }
-button{
-	background-color:#052616;
+#facilities h1{
+	font-weight: 900;
+	font-size: 34px;
+	padding-bottom: 2%;
+	padding-top: 13%;
 }
-.carousel-caption{
-	opacity:0.5;
+.title{
+	text-align: center;
 }
-#map {
-  width: auto;
-  height: 300px;
+
+.title p{
+	font-size: 18px;
+	padding-top: 5%;
+	padding-bottom: 2%;
 }
-div.card{
-	transition: transform 0.5s;
+
+.card-img-top{
+	border-radius: 15px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
-div.card:hover {
-	transform: scale(1.01,1.01);
+
+.card-body a{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+	
 }
-.card a, a:hover {
-	color: black;
-	text-decoration: none;
-}
-header img{
-	max-height:150px;
-	height:-webkit-fill-available;
-}
-.dropdown-menu{
-    background-color:#243447;
-}
-.dropdown-menu a{
-	color:rgba(255,255,255,.5);
-}
-.dropdown-menu a:hover{
-   color:white;
-   background-color:#28a745;
+
+.card-text{
+	font-size: 18px;
+	padding-top: 20px;
 }

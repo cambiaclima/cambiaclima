@@ -1,20 +1,22 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url(font/font.otf);
-}
 
-
-.image {
-
-  height: 50px;
-  width: 50px;
-}
-
+  
+ @font-face {
+    font-family: sans-serif;
+    src: url(font/font.otf);
+    font-weight: bold;
+  }
+  
+  .image {
+    
+    height: 50px;
+    width: 50px;
+  }
+  
 .navbar
-{    font-family: myFirstFont;
-    background-color: rgba(255,255,255,1);
-    padding:.8rem;
-}
+  {	font-family: sans-serif;
+      background-color: rgba(255,255,255,1);
+	  padding:.8rem;
+  }
 .navbar-nav li{
-  padding-right: 20px
+	padding-right: 20px
 }

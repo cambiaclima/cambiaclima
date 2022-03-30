@@ -26,7 +26,7 @@ $currentPage = 'Approfondimenti scientifici';
       require '../includes/head.php';
       require '../includes/popover.php';
     ?>
-    <link rel="stylesheet" href="../css/stylePage.css?<?=filemtime('../css/stylePage.css');?>">
+    <link rel="stylesheet" href="../css/styleApprofondimenti.css?<?=filemtime('../css/styleApprofondimenti.css');?>">
   </head>
   <body>
 
@@ -35,7 +35,7 @@ $currentPage = 'Approfondimenti scientifici';
     <!-- NavBar -->
     <?php require '../includes/nav.php';?>
     <!-- Container -->
-    <main class="container-md shadow-sm bg-white" role="main">
+    <main class="container-md shadow-sm" role="main">
 
       <div id = "header" align = "center"><!--#header, dove c'è il titolo-->
         <h1>Approfondimenti Scienitfici<h1>
