@@ -39,7 +39,12 @@
         <h3>kg CO2</h3>
         <h2>Albero da piantare:</h2>
         <h1 id='result1' class='bg-success rounded-lg'></h1>
-        <h3>kg CO2</h3>
+        <br>
+        <button id="co2_tree_table" onclick="co2_tree()" style="color:white;">clicca per vedere quanta co2 riescono ad assimilare tutti gli alberi</button>
+    
+
+        <br>
+        <table id="co2_tree_table" ></table>
     </div>
 
     <script>
@@ -80,6 +85,10 @@
                           }
             document.getElementById('result').innerHTML = risultato;
             document.getElementById('result1').innerHTML = comp;
+        }
+
+        function co2_tree(){
+            document.getElementById('co2_tree_table').innerHTML = '<table id="co2_tree_table" style="color:white; border:2px;">       <th>                <td>Banano</td>                <td>Caffe</td>                <td>Moringa</td>                <td>Cedro</td>                <td>Mango</td>                <td>Fromager</td>                <td>Baobab</td>            </th>            <tr>                <td>10kg</td>                <td>55kg</td>                <td>200kg</td>                <td>500kg</td>                <td>700kg</td>                <td>2000kg</td>                <td>3000kg</td>            </tr>        </table>';        
         }
 
     </script>
