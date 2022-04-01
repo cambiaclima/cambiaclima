@@ -24,7 +24,7 @@
             <br><br><br>
             <a href='games/pratofiorito/index.html'>gioca a prato fiorito</a> <br><br><br>
             <a href='games/blackjack/newplay.html'>gioca al blackjack</a> <br><br><br>
-            <a href='games/snake/index.html'>gioca a snake</a>
+            <a href='games/snake/index.php'>gioca a snake</a>
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>
