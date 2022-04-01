@@ -23,7 +23,7 @@
 <body>
 
 <div class="flex-parent" id="page">
-    <h1 class="title">Prato fiorito ufficiale cambiaclima</h1>
+    <h1 class="title" style="color:white">Prato fiorito ufficiale cambiaclima</h1>
 
     <!-- navigation panel -->
     <div class="flex-nav-container" id="nav">
@@ -33,13 +33,13 @@
                 <!-- <span id="mines" class="info">8</span> -->
             </div>
             <div class="timer menu">
-                <p>Tempo</p>
+                <p style="color:white">Tempo</p>
                 <timer id="timer">00:00</timer>
             </div>
         </div>
 
         <div class="separator"></div>
-        <div>
+        <div style="color:white">
             <div class="menu" onclick="show('minesweeper-game');"><a class="button">Gioca</a></div>
             <!-- <div class="menu" onclick="show('settings');"><a class="button">Impostazioni</a></div> -->
             <div class="menu" onclick="show('info');"><a class="button"> Info </a></div>

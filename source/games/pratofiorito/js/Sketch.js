@@ -3,12 +3,12 @@ const timer = new Timer();
 const WIN = {
   name: "win",
   img: "img/trophy.svg", // uncomment if on a local server
-  text: ["Congratulazioni!", "br", "hai vinto!"]
+  text: ["CONGRATULAZIONI!", "br", "hai salvato la foresta da un disastro ambientale!"]
 };
 const LOSE = {
   name: "lose",
   //img: "../img/skull.svg", //if on a local server
-  text: ["BOOOM !!", "br", "hai perso!"]
+  text: ["HAI PERSO!", "br", "la foresta sta andando a fuoco!"]
 };
 
 

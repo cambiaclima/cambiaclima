@@ -22,7 +22,7 @@
                 <h1>Giochi ufficiali targati cambia clima</h1>
             </div>
             <br><br><br>
-            <a href='games/pratofiorito/index.html'>gioca a prato fiorito</a> <br><br><br>
+            <a href='games/pratofiorito/index.php'>gioca a prato fiorito</a> <br><br><br>
             <a href='games/blackjack/newplay.html'>gioca al blackjack</a> <br><br><br>
             <a href='games/snake/index.php'>gioca a snake</a>
 		</main>
