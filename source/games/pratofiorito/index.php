@@ -71,7 +71,7 @@
             </div>
 
         </div> -->
-        <div class="content" id="info" style="display: none;">
+        <div class="content" id="info" style="display: none; color:white">
             <h2>Info</h2>
 
             <p>Gioca a prato fiorito, vinci svelando tutte le caselle che non contengono una fiamma.</p>
