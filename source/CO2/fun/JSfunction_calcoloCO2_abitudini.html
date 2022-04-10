@@ -5,6 +5,19 @@
     <title>Calcolatore </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6.cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        table{
+            border: 1px solid;
+            text-align: center;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td, tr{
+            border: 1px solid;
+        }
+        tr:hover {background-color: coral;}
+    </style>
 </head>
 
 <body>
@@ -88,7 +101,7 @@
         }
 
         function co2_tree(){
-            document.getElementById('co2_tree_table').innerHTML = '<table id="co2_tree_table" style="color:white; border:2px;">       <th>                <td>Banano</td>                <td>Caffe</td>                <td>Moringa</td>                <td>Cedro</td>                <td>Mango</td>                <td>Fromager</td>                <td>Baobab</td>            </th>            <tr>                <td>10kg</td>                <td>55kg</td>                <td>200kg</td>                <td>500kg</td>                <td>700kg</td>                <td>2000kg</td>                <td>3000kg</td>            </tr>        </table>';        
+            document.getElementById('co2_tree_table').innerHTML = '<table id="co2_tree_table" style="color:white; border:2px;">       <tr>                <td>Banano</td>                <td>Caffe</td>                <td>Moringa</td>                <td>Cedro</td>                <td>Mango</td>                <td>Fromager</td>                <td>Baobab</td>            </tr>            <tr>                <td>10kg</td>                <td>55kg</td>                <td>200kg</td>                <td>500kg</td>                <td>700kg</td>                <td>2000kg</td>                <td>3000kg</td>            </tr>        </table>';        
         }
 
     </script>
