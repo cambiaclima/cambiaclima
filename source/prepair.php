@@ -21,6 +21,17 @@
 			require '../includes/head.php';
 			require '../includes/popover.php';
 		?>
+		<style>
+			p{
+				color: lightblue;
+			}
+
+			video{
+				display: block; 
+				margin: auto;
+				width: 50%;
+			}
+		</style>
 		<link rel="stylesheet" href="../css/styleApprofondimenti.css?<?=filemtime('../css/styleApprofondimenti.css');?>"> 	
 	</head>
 	<body>
