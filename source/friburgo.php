@@ -61,12 +61,12 @@
 		<!-- Container -->
 		<main role="main" class="container-md shadow-sm py-md-3 px-md-5 pr-sm-1">
 			<div id = "title" class = "row">
-				<div align = "center" class = "col-12">
+				<div style="text-align: center;" class = "col-12">
 					<h1>Friburgo</h1>
 				</div><!--conlonna 1 della riga 1-->
 			</div><!--Riga 1 -->
 			<div id = "descrizione" class = "row mt-2" id = "row2">
-				<div align = "left" class = "col" id = "descrizionee"><!-- contenuto in questa riga-->
+				<div style="text-align: left;" class = "col" id = "descrizionee"><!-- contenuto in questa riga-->
 					<p>
 						<?php
 							$text='Partiamo alla scoperta di questa bellissima cittadina nel cuore della foresta Nera che negli ultimi anni è diventata l’esempio numero uno di turismo della sostenibilità.
@@ -80,7 +80,7 @@
 				</div><!--conlonna 2 della riga 2-->
 			</div><!--Riga 2 -->
 			<br><!--spazio tattico-->
-			<div class = "row" align = "center">
+			<div class = "row" style="text-align: center;">
 				<?php
 					$cards= array(
 						array(
@@ -222,7 +222,7 @@
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>
 		<script>
-			<!--
+			/*
 			$(function() {
 			  $(".video").click(function () {
 					var theModal = $(this).data("target"),
@@ -236,7 +236,7 @@
 					});
 			  });
 			});
-			//-->
+			*/
 		</script>
 	</body>
 </html>
