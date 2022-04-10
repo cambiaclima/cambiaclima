@@ -97,7 +97,7 @@
 			</div>
 			<div class="bg">
 			</div>
-		<!--</main>
+		<!-- </main> -->
 		<!-- Footer -->
 		<?php require 'includes/footer.php';?>
 </div>
