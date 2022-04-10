@@ -145,7 +145,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
       hardMode = true;
       fadeSpeed = 4000;
       fadeExponential = 1.025;
-      noteElement.innerHTML = `Hard mode. Press space to start!`;
+      noteElement.innerHTML = `Modalita' difficile, premi barra spaziatrice per iniziare!`;
       noteElement.style.opacity = 1;
       resetGame();
       return;
@@ -156,7 +156,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
       hardMode = false;
       fadeSpeed = 5000;
       fadeExponential = 1.024;
-      noteElement.innerHTML = `Easy mode. Press space to start!`;
+      noteElement.innerHTML = `Modalita' facile, premi barra spaziatrice per iniziare!`;
       noteElement.style.opacity = 1;
       resetGame();
       return;
