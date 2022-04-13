@@ -51,13 +51,13 @@
 				<div class="col-md-3 menu" align="left"><!-- SideBar -->
 					<div class = "row">
 					<div class="col">
-						<h3> Scegli l'argomento: </h3>
+						<h3> Menu: navigazione </h3>
 					</div>
 					</div><!--Riga per il titolo della sezione-->
 					<br>
 					<div class = "row">
 						<div class="col">
-							<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine">
+							<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine" onfocus="this.value=''">
 						</div>
 					</div><!--Riga per il form-->
 					<br>
@@ -88,7 +88,6 @@
 						foreach ($prepair as $nomeCategoria => $Contenuto) {
 							$codice=preg_replace('/\s+/', '', strtolower ($nomeCategoria));
 							print '<div id="'.$codice.'" class ="container tab-pane '.$active.'" >
-								<h3>'.$nomeCategoria.'</h3>
 								<div class="row">
 								<div class="text">
 									'.nl2br(popups($Contenuto)).'
