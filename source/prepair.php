@@ -88,7 +88,6 @@
 						foreach ($prepair as $nomeCategoria => $Contenuto) {
 							$codice=preg_replace('/\s+/', '', strtolower ($nomeCategoria));
 							print '<div id="'.$codice.'" class ="container tab-pane '.$active.'" >
-								<h3>'.$nomeCategoria.'</h3>
 								<div class="row">
 								<div class="text">
 									'.nl2br(popups($Contenuto)).'
