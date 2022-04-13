@@ -121,11 +121,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
         "ArrowUp",
         "ArrowRight",
         "ArrowDown",
-        " ",
-        "H",
-        "h",
-        "E",
-        "e"
+        " "
       ].includes(event.key)
     )
       return;
@@ -140,27 +136,27 @@ window.addEventListener("DOMContentLoaded", function (event) {
       return;
     }
 
-    // Set Hard mode
-    if (event.key == "H" || event.key == "h") {
-      hardMode = true;
-      fadeSpeed = 4000;
-      fadeExponential = 1.025;
-      noteElement.innerHTML = `Modalita' difficile, premi barra spaziatrice per iniziare!`;
-      noteElement.style.opacity = 1;
-      resetGame();
-      return;
-    }
+    // // Set Hard mode
+    // if (event.key == "H" || event.key == "h") {
+    //   hardMode = true;
+    //   fadeSpeed = 4000;
+    //   fadeExponential = 1.025;
+    //   noteElement.innerHTML = `Modalita' difficile, premi barra spaziatrice per iniziare!`;
+    //   noteElement.style.opacity = 1;
+    //   resetGame();
+    //   return;
+    // }
 
-    // Set Easy mode
-    if (event.key == "E" || event.key == "e") {
-      hardMode = false;
-      fadeSpeed = 5000;
-      fadeExponential = 1.024;
-      noteElement.innerHTML = `Modalita' facile, premi barra spaziatrice per iniziare!`;
-      noteElement.style.opacity = 1;
-      resetGame();
-      return;
-    }
+    // // Set Easy mode
+    // if (event.key == "E" || event.key == "e") {
+    //   hardMode = false;
+    //   fadeSpeed = 5000;
+    //   fadeExponential = 1.024;
+    //   noteElement.innerHTML = `Modalita' facile, premi barra spaziatrice per iniziare!`;
+    //   noteElement.style.opacity = 1;
+    //   resetGame();
+    //   return;
+    // }
 
     // If an arrow key was pressed add the direction to the next moves
     // Do not allow to add the same direction twice consecutively
@@ -271,12 +267,12 @@ window.addEventListener("DOMContentLoaded", function (event) {
       window.requestAnimationFrame(main);
     } catch (error) {
       // Write a note about restarting game and setting difficulty
-      const pressSpaceToStart = "\nPremi spazio per ricominciare.";
+      const pressSpaceToStart = "<br><br>Premi spazio per ricominciare.";
       const changeMode = hardMode
-        ? "Vuoi tornare alla modalita' facile? premi E."
-        : "Pronto per la modalita' difficile? premi H.";
+        ? ""
+        : "";
       const followMe =
-        'Idea di Riccardo Fiorito, creazione di Cimadomo Mattia';
+        '';
       noteElement.innerHTML = `${error.message}. ${pressSpaceToStart} <div>${changeMode}</div> ${followMe}`;
       noteElement.style.opacity = 1;
       containerElement.style.opacity = 1;

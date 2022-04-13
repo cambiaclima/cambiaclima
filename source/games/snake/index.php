@@ -12,12 +12,12 @@
 	<div class="col-sm">
   	<div class="row">
 		<form action="db_punteggio.php" method="POST" name="pointsDB">
-				<input type="text" name="player_name" id="name_box"  class="form-control" value="inserisci il tuo nome (senza spazi)"><br>
+				inserisci il tuo nome (senza spazi)<input type="text" name="player_name" id="name_box"  class="form-control" value=""><br>
 				<input type="button" value="ottieni il tuo punteggio" class="btn btn-secondary btn-sm" onclick="getScore()">
 				<input type="text" name="player_score" id="score_box" class="btn btn-secondary btn-sm"   value="0" readonly><br>
 				<input type="submit" value="salva il tuo punteggio"><br><br>
 
-				<a href="points_history.php" target="_blank" style="color:white"> clicca per vedere la classifica dei miglior punteggi</a>
+				<a href="points_history.php" target="_blank" style="color:white"> clicca per vedere la classifica dei miglior punteggi</a><br>
 		</form>
 
 	<div>
