@@ -51,13 +51,13 @@
 				<div class="col-md-3 menu" align="left"><!-- SideBar -->
 					<div class = "row">
 					<div class="col">
-						<h3> Scegli l'argomento: </h3>
+						<h3> Menu: navigazione </h3>
 					</div>
 					</div><!--Riga per il titolo della sezione-->
 					<br>
 					<div class = "row">
 						<div class="col">
-							<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine">
+							<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine" onfocus="this.value=''">
 						</div>
 					</div><!--Riga per il form-->
 					<br>

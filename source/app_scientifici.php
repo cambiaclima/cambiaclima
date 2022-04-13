@@ -52,7 +52,7 @@ $currentPage = 'Approfondimenti scientifici';
               <br>
               <div class = "row">
               	<div class="col">
-      						<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine">
+      						<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine" onfocus="this.value=''">
       					</div>
               </div><!--Riga per il form-->
               <br>
