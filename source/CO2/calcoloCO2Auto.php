@@ -6,8 +6,7 @@
 ?>
 <html lang="it">
 <html lang="it">
-	<head>
-	<link rel="stylesheet" href="/cambiaclima/css/styleCo2.css?<?echo filemtime('../css/styleCo2.css');?>">
+	<head>		<link rel="stylesheet" href="/cambiaclima/css/style.css?<?echo filemtime('../css/style.css');?>">
 			<?php require '../../includes/head.php';?>
 	</head>
 	<body>	

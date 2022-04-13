@@ -8,38 +8,38 @@
 </head>
 
 <body>
-    <div class='container bg-info text-white rounded-lg text-center'>
+    <div class='container shadow-sm text-white rounded-lg text-center'>
         <h1>Carbon Emmision Calculator</h1>
         <h3>Quanti kilometri compie con un litro?</h3>
-        <input id='kml' type='number' value='0' />
+        <input id='kml' class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" type='number' value='0' />
         <h3>Quale è il numero di chilometri che si vogliono percorrere?</h3>
-        <input id='dist' type='number' value='0' />
+        <input id='dist' class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  type='number' value='0' />
         <h3>Che alimentazione utilizza?(Benzina, Diesel o GPL)</h3>
         <form action=''>
-            <select name="select" id="select">
+            <select name="select" class="custom-select" id="select">
                 <option value='1'>Benzina</option>
                 <option value='2'>Diesel</option>
                 <option value='3'>GPL</option>
             </select>
         </form>
        
-        <br />
-        <br />
-        <button class='btn-secondary rounded-sm' onclick='calcCO2()'>Calcolo il totale delle emissioni di CO2</button>
-        <br />
-        <br />
+        <br/>
+        <br/>
+        <button type="button" class="btn btn-secondary btn-lg" onclick='calcCO2()'> Calcolo il totale delle emissioni di CO2 </button>
+        <br/>
+        <br/>
     </div>
     <br />
     <div class='container text-center'>
         <h2>La CO2 emessa per per km è:</h2>
-        <h1 id='result2' class='bg-success rounded-lg'></h1>
+        <h1 id='result2' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2 / km</h3>
         <br />
         <h2>In tutto l'auto ha emesso:</h2>
-        <h1 id='result' class='bg-success rounded-lg'></h1>
+        <h1 id='result' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2</h3>
         <h2>Un auto elettrica avrebbe invece emesso:</h2>
-        <h1 id='result3' class='bg-success rounded-lg'></h1>
+        <h1 id='result3' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2</h3>
     </div>
 
@@ -53,7 +53,10 @@
 
 
         function calcCO2() {
+            if(kml.value <= 0) alert("input non valido");
+	    if(dist.value <= 0) alert("input non valido");
             var option = select.options[select.selectedIndex];
+console.log("no vabbe");
             var x = kml.value;
             var y = dist.value;
             var al = option;

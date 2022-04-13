@@ -52,7 +52,7 @@ $currentPage = 'Approfondimenti scientifici';
               <br>
               <div class = "row">
               	<div class="col">
-      						<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine" onfocus="this.value=''">
+      						<input class="form-control" id="myInput" type="text" placeholder="Inserisci termine">
       					</div>
               </div><!--Riga per il form-->
               <br>
@@ -83,8 +83,8 @@ $currentPage = 'Approfondimenti scientifici';
                   foreach ($app_scientifici as $titolo => $contenuto) {
                     $codice=preg_replace('/\s+/', '', strtolower ($titolo));
                     print '<div id="'.$codice.'" class ="container tab-pane '.$active.'" >
+                      <h3>'.$titolo.'</h3>
                       <div class="row">
-                        <h1>'.$titolo.'</h1>
                         <div class="text">
                           '.nl2br(popups($contenuto)).'
                         </div>

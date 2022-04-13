@@ -20,9 +20,9 @@
 		<main class="container-md shadow-sm" role="main">
 			<h1>Calcolo della CO2 che emetti in base alle tue abitudini settimanali o al tuo stile di guida</h1>
 			<br><br><br><br>
-			<a href="CO2/calcoloCO2Abitudini.php">CLICCA QUA PER CALCOLARE LA CO2 CHE EMETTI IN BASE ALLE TUE ABITUDINI SETTIMANALI</a>
+			<a class="btn btn-secondary data-toggle="collapse" href="CO2/calcoloCO2Abitudini.php">CLICCA QUA PER CALCOLARE LA CO2 CHE EMETTI IN BASE ALLE TUE ABITUDINI SETTIMANALI</a>
 			<br><br>
-			<a href="CO2/calcoloCO2Auto.php">CLICCA QUA PER CALCOLARE LA CO2 CHE EMETTI IN BASE AL TUO STILE DI GUIDA</a>
+			<a class="btn btn-secondary data-toggle="collapse" href="CO2/calcoloCO2Auto.php">CLICCA QUA PER CALCOLARE LA CO2 CHE EMETTI IN BASE AL TUO STILE DI GUIDA</a>
 		</main>
 		 <!--Footer -->
 		<?php require '../includes/footer.php';?>

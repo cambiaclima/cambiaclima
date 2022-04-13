@@ -6,9 +6,9 @@
 ?>
 <html lang="it">
 <html lang="it">
-	<head>
-	<link rel="stylesheet" href="/cambiaclima/css/styleCo2.css?<?echo filemtime('../css/styleCo2.css');?>">
-			<?php require '../../includes/head.php';?>
+	<head>	
+		<?php require '../../includes/head.php';?>
+		<link rel="stylesheet" href="/cambiaclima/css/style.css?<?echo filemtime('../css/style.css');?>">
 	</head>
 	<body>	
 		<!-- Header -->
@@ -16,8 +16,8 @@
 		<!-- NavBar -->
 		<?php require '../../includes/nav.php';?>
 		<!-- Container -->
-		<main class="container-md shadow-sm" role="main">
-            <?php require 'fun/JSfunction_calcoloCO2_abitudini.html';?>
+		<main class="container-md" role="main">
+			 <?php require 'fun/JSfunction_calcoloCO2_auto.html'?>
 		</main>
 		 <!--Footer -->
 		<?php require '../../includes/footer.php';?>

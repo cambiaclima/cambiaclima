@@ -21,17 +21,8 @@ $conn->close();
           require '../../../includes/popover.php';
         ?>
         <style>
-            table{
-                border: 1px solid;
-                text-align: center;
-                padding: 15px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            td, tr{
-                border: 1px solid;
-            }
-            tr:hover {background-color: coral;}
+           
+            tr:hover {background-color: green;}
         </style>
 	</head>
 	<body>
@@ -43,7 +34,7 @@ $conn->close();
 		<main class="container-md shadow-sm" role="main">
             <?php 
                 print '	
-                <table id="score_history">
+                <table class="table table-dark rounded" id="score_history">
                     <tr>
                         <td>Nome giocatore</th>
                         <td>Punti</th>
