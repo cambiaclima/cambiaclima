@@ -4,13 +4,12 @@
 <head>
     <title>Calcolatore </title>
    
-    <link rel="stylesheet" href="/cambiaclima/css/style.css?<?echo filemtime('../css/style.css');?>">s
+    <link rel="stylesheet" href="/cambiaclima/css/style.css?<?echo filemtime('../css/style.css');?>">
 </head>
 
 <body>
-<div class="container">
-<div class="row">
-<div class="col-sm">
+    <div class="row">
+    <div class="col-sm">
     <div class='container shadow-sm text-white rounded-lg text-center'>
         <h1>Calcolatore di Co2</h1>
         <h3>Quanti kilometri percorri in auto in una settimana?</h3>
@@ -34,8 +33,7 @@
         <br />
         <br />
     </div>
-</div>
-
+    </div>
     <br />
     <div class="col-sm">
     <div class='container text-center'>
@@ -44,7 +42,7 @@
         <h1 id='result' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2</h3>
         <h2>Albero da piantare:</h2>
-        <h1 id='result1' class='bg-dark rounded-lg'></h1> 
+        <h1 id='result1' class='bg-dark rounded-lg'></h1>
         <br>
         <button type="button" class="btn btn-secondary btn-lg btn-block" id="co2_tree_table" onclick="co2_tree()" >clicca per vedere quanta co2 riescono ad assimilare tutti gli alberi</button>
     
@@ -53,7 +51,7 @@
         <table class="table table-dark" id="co2_tree_table" ></table>
     </div>
     </div>
-  </div>s
+</div>
     <script>
 
         var auto = document.getElementById('auto');

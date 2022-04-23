@@ -3,11 +3,12 @@
 
 <head>
     <title>Calcolatore </title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
 </head>
 
 <body>
+    <div class="row">
+        <div class="col-sm">
     <div class='container shadow-sm text-white rounded-lg text-center'>
         <h1>Carbon Emmision Calculator</h1>
         <h3>Quanti kilometri compie con un litro?</h3>
@@ -29,7 +30,9 @@
         <br/>
         <br/>
     </div>
+    </div>
     <br />
+    <div class="col-sm">
     <div class='container text-center'>
         <h2>La CO2 emessa per per km è:</h2>
         <h1 id='result2' class='bg-dark rounded-lg'></h1>
@@ -42,7 +45,8 @@
         <h1 id='result3' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2</h3>
     </div>
-
+    </div>
+    </div>
     <script>
 
         var kml = document.getElementById('kml');

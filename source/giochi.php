@@ -22,9 +22,9 @@
                 <h1>Giochi ufficiali targati cambia clima</h1>
             </div>
             <br><br><br>
-            <a class="btn btn-secondary" data-toggle="collapse" href="games/pratofiorito/index.php">gioca a prato fiorito</a> <br><br><br>
-            <a class="btn btn-secondary" data-toggle="collapse" href='games/blackjack/newplay.html'>gioca al blackjack</a> <br><br><br>
-            <a class="btn btn-secondary" data-toggle="collapse" href='games/snake/index.php'>gioca a snake</a>
+            <a class="btn btn-secondary"  href="games/pratofiorito/index.php">gioca a prato fiorito</a> <br><br><br>
+            <a class="btn btn-secondary"  href='games/blackjack/newplay.html'>gioca al blackjack</a> <br><br><br>
+            <a class="btn btn-secondary"  href='games/snake/index.php'>gioca a snake</a>
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>

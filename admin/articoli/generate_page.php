@@ -1,5 +1,5 @@
 <?php
-  $myfile = fopen("cambiaclima/admin/articoli/".$IDArt.".php", "w") or die("Unable to open file!");
+  $myfile = fopen("../articoli/".$IDArt.".php", "w") or die("Unable to open file!");
   $txt = '<?php $IDArt='.$IDArt.';?>';
   fwrite($myfile, $txt);
   $txt = '<?php require "blank_article.php";?>';

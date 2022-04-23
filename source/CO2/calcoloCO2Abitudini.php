@@ -17,7 +17,7 @@
 		<?php require '../../includes/nav.php';?>
 		<!-- Container -->
 		<main class="container-md" role="main">
-			 <?php require 'fun/JSfunction_calcoloCO2_auto.html'?>
+			 <?php require 'fun/JSfunction_calcoloCO2_abitudini.html'?>
 		</main>
 		 <!--Footer -->
 		<?php require '../../includes/footer.php';?>

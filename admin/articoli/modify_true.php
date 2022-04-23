@@ -1,8 +1,8 @@
 <?php
 	$IDArt = $_POST ['IDArt'];
-	$Titolo = mysql_escape_string ($_POST['titolo']);
-    $breve_descr = mysql_escape_string ($_POST['breve_descr']);
-    $contenuto = mysql_escape_string ($_POST['contenuto']);
+	$Titolo = $_POST['titolo'];
+    $breve_descr = $_POST['breve_descr'];
+    $contenuto = $_POST['contenuto'];
     $immagine = preg_replace('/\s+/', '', basename($_FILES["fileToUpload"]["name"]));
 
 		//Connesione al server
