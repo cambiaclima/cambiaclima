@@ -113,7 +113,7 @@
 								<img class="card-img-top" src="img/co2.jpg" alt="Card image cap">
 								<div class="card-body">
 								<a href="source/co2.php">CALCOLO CO2</a>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p class="card-text">Calcola l'impronta ambientale che la tua auto o le tue abitudini quotidiane producono.</p>
 									
 								</div>
 							</div>
@@ -123,7 +123,7 @@
 								<img class="card-img-top" src="img/glossario.jpg" alt="Card image cap">
 								<div class="card-body">
 								<a href="source/glossario.php">GLOSSARIO</a>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p class="card-text">Impara le definizioni riguardanti i cambiamenti climatici in maniera facile e veloce.</p>
 									
 								</div>
 							</div>
@@ -133,7 +133,7 @@
 								<img class="card-img-top" src="img/game.jpg" alt="Card image cap">
 								<div class="card-body">
 								<a href="source/giochi.php">GIOCHI</a>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<p class="card-text">Prova i nostri giochi a tema natura, animali e cambiamenti climatici. Salva le foreste, rilassati un momento o mangia le molecole di C02.</p>
 									
 								</div>
 							</div>
