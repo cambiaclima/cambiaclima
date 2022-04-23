@@ -22,7 +22,8 @@
                 <div class="card_container" id="first_opponent_card"></div>
                 <div class="card_container" id="second_opponent_card"></div>                
             </div>
-            <input type="button" value="Dai le carte" name="btn_newcards" id="btn_newcards" class="choice" onclick="style.display = 'none'; firstAllCards(); return false;" style="margin-left: 40%;">
+            <input type="button" value="Dai le carte" name="btn_newcards" id="btn_newcards" class="choice" onclick="style.display = 'none'; firstAllCards(); " style="margin-left: 40%;"> 
+            <!-- return false; dopo firstAllCards(); in caso di problemi -->
             <div class="user_box" id="user_box">
                 <div class="card_container" id="first_user_card"></div>             
             </div>        
@@ -37,7 +38,6 @@
             <div class="score" id="score_user" style="margin-bottom: 20px;"></div>   
             <input type="button" value="Nuova partita" class="choice" style="width: 107px; height: 40px;" onclick="location.reload();"><br><br><br>  
             <a href="howtoplay.html"> <input type="button" value="Tutorial" id="boxAbout" class="choice" style="width: 107px; height: 40px;"></a><br><br><br> 
-            <a href="https://www.pokerstarscasino.it/games/blackjack/rules/?no_redirect=1"> <input type="button" value="Regole del BJ" id="boxHowToPlay" class="choice" style="width: 107px; height: 40px;"></a>
         </div>
 
 
