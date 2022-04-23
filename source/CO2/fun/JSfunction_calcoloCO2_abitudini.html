@@ -63,33 +63,42 @@
         var carne = document.getElementById('carne');
      
         function calcCO2() {
-            var aut=auto.value;
-            var sco = scooter.value;
-            var autob = autobus.value;
-            var tra = tram.value;
-            var tren = treno.value;
-            var carn = carne.value;
-            var past = pasta.value;
-            let comp="";
-            var risultato=(aut*0.32+sco*0.11+autob*0.1+tra*0.04+carn*2.5+past*0.27+tren*0.04)*4;
-           
-            if(risultato<10 || risultato<54){
-                comp="Banano";
-               }else if( risultato<99){
-                 comp="Caffe'";
-                   }else if( risultato<199){
-                    comp="Moringa";
-                   } else if( risultato<499){
-                       comp="Cedro";
-                     }else if( risultato<699){
-                        comp="Mango";
-                         }else if(risultato<1999){
-                             comp="Fromager";
-                          }else if(risultato>3000){
-                             comp="Baobab";
-                          }
-            document.getElementById('result').innerHTML = risultato;
-            document.getElementById('result1').innerHTML = comp;
+            if(auto.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(scooter.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(autobus.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(tram.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(treno.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(carne.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+	        else if(pasta.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+            else {
+                var aut=auto.value;
+                var sco = scooter.value;
+                var autob = autobus.value;
+                var tra = tram.value;
+                var tren = treno.value;
+                var carn = carne.value;
+                var past = pasta.value;
+                let comp="";
+                var risultato=(aut*0.32+sco*0.11+autob*0.1+tra*0.04+carn*2.5+past*0.27+tren*0.04)*4;
+            
+                if(risultato<10 || risultato<54){
+                    comp="Banano";
+                }else if( risultato<99){
+                    comp="Caffe'";
+                    }else if( risultato<199){
+                        comp="Moringa";
+                    } else if( risultato<499){
+                        comp="Cedro";
+                        }else if( risultato<699){
+                            comp="Mango";
+                            }else if(risultato<1999){
+                                comp="Fromager";
+                            }else if(risultato>3000){
+                                comp="Baobab";
+                            }
+                document.getElementById('result').innerHTML = risultato;
+                document.getElementById('result1').innerHTML = comp;
+                }
         }
 
         function co2_tree(){
