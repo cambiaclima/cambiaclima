@@ -27,6 +27,26 @@ $currentPage = 'Bacheca';
 		<!-- Container -->
 		<main class="container-md pt-3" role="main">
 			<div class="row row-cols-1 row-cols-lg-3 row-cols-md-2" id="main-container">
+
+			<div class="col p-3">
+				<div class="card">
+					<div class="card-header shadow-sm">
+					<h5 class="card-title" style="color:#403F3F;">BACHECA</h5>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<a href="/cambiaclima/"> Torna alla home </p></a>
+						</li>
+						<li class="list-group-item">
+							<input type="button" onclick=logout() value="Logout"> <!-- SISTEMA LOGIN: PASSO 6-->
+						</li>
+						<li class="list-group-item">
+							<p style="color: black;">RICORDARSI DI FARE IL LOGOUT PRIMA DI USCIRE DA QUESTA PAGINA<br>PER EVITARE DI LASCIARE LA SESSIONE APERTA PUBBLICAMENTE</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br><br>
 			<?php
 				$urls = array(
 					'Articoli' => 'articoli/',
@@ -56,13 +76,9 @@ $currentPage = 'Bacheca';
 								</li>
 							</ul>
 						</div>
-					</div>'."\n\t\t\t";
+					</div><br><br>';
 				}
 			error_reporting(E_ALL ^ E_WARNING);?>
-
-			<p style="text-align:center;"> <a href="/cambiaclima/"> Torna alla home </p></a>
-            <input type="button" onclick=logout() value="Logout"> <!-- SISTEMA LOGIN: PASSO 6-->
-			<p style="text-align:center;">RICORDARSI DI FARE IL LOGOUT PRIMA DI USCIRE DA QUESTA PAGINA<br>PER EVITARE DI LASCIARE LA SESSIONE APERTA PUBBLICAMENTE</p>
 		</div>
 		</main>
 	</body>
