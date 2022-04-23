@@ -222,7 +222,6 @@
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>
 		<script>
-			/*
 			$(function() {
 			  $(".video").click(function () {
 					var theModal = $(this).data("target"),
@@ -236,7 +235,6 @@
 					});
 			  });
 			});
-			*/
 		</script>
 	</body>
 </html>
