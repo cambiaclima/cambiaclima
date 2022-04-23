@@ -23,7 +23,7 @@
 						<select class="form-control" id="categoria" name="categoria">
 							<?php
 							require '../../includes/dbconnect.php';
-							$sql = "SELECT * FROM `categoria`;";
+							$sql = "SELECT * FROM `categoria_approfondimento`;";
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0) {
 								$i=0;
@@ -32,7 +32,6 @@
 								}
 							}
 							$conn->close();
-							mysqli_close($conn);
 							?>
 						</select>
 			    </div>

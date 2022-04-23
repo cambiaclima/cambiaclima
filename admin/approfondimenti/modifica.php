@@ -30,7 +30,7 @@ if($id!=null){
 					<label for="categoria">Categoria</label>
 					<select class="form-control" id="categoria" name="categoria">
 						<?php
-						$sql2 = "SELECT * FROM `categoria`;";
+						$sql2 = "SELECT * FROM `categoria_approfondimento`;";
 						$result2 = $conn->query($sql2);
 						if ($result2->num_rows > 0) {
 							$i=0;

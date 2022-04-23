@@ -30,15 +30,16 @@ $currentPage = 'Bacheca';
 			<?php
 				$urls = array(
 					'Articoli' => 'articoli/',
-					'Dati Co2' => 'dati_co2/',
-					'Agenti inquinanti' => 'inquinanti/',
-					'Glossario' => 'glossario/',
-					'Approfondimenti Scientifici' => 'approfondimenti/',
-					'SlideShow' => 'slideshow/',
+					// 'Dati Co2' => 'dati_co2/',
+					// 'Agenti inquinanti' => 'inquinanti/',
+					// 'Glossario' => 'glossario/',
+					// 'Approfondimenti Scientifici' => 'approfondimenti/',
+					// 'SlideShow' => 'slideshow/', parti superflue o non funzionanti, ripararle e poi pubblicarle di nuovo
 				);
 
 				foreach ($urls as $name => $url) {
-					print '<div class="col p-3">
+					print '
+					<div class="col p-3">
 						<div class="card">
 						  <div class="card-header shadow-sm">
 						    <h5 class="card-title" style="color:#403F3F;">'.$name.'</h5>
