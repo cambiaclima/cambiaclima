@@ -213,11 +213,6 @@
 					</p>
 				</div><!--conlonna 2 della riga 6-->
 			</div><!-- riga 6-->
-			<div id = "row6" class = "row">
-				<div class = "col">
-					<a href = "https://viaggiostrasburgo2020.altervista.org/una-friburgo-ecologica" target="_blank">Informazioni tratte dal <u>sito di IV Bi<u></a>
-				</div>
-			</div>
 		</main>
 		<!-- Footer -->
 		<?php require '../includes/footer.php';?>

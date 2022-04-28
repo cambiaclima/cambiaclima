@@ -137,34 +137,7 @@ $currentPage = 'Glossario';
             ?>
           </div><!-- significato-->
         </div><!-- colonna usata per inserire il significato del termine selezionato-->
-        <div class = "col-md-3 menu" id = "app_space" align = "center" >
-            <a class="video" src = "" data-toggle="modal" data-target="#videoModal">
-            <div class="flip-card">
-					<div class="flip-card-inner">
-						<div class="flip-card-front"style="background: url(../img/Img_Chatbot_a.jpeg) no-repeat center;
-          		background-size:cover;">
-						</div>
-						<div class="flip-card-back ">
-								<br>
-                                <br>
-								<h4 class="align-middle">Clicca per conversare con il Chatbot </h4>
-						</div>
-					</div>
-				</div>
-            </a>
-            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered modal-xl"><!--modal-dialog-centered-->
-						<div class="modal-content">
-							<div class="modal-body">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<iframe width="505px" height="600px" src="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=82ce1f4a-aa56-4ccb-81f2-e2e691c37cbb&serviceInstanceID=67e984dd-a88a-4291-b926-06d011854cc3" frameborder="0"  scrolling="no" allowfullscreen></iframe>
-							</div>
-							<div class="modal-footer">
-								<p></p>
-							</div>
-						</div>
-					</div>
-				</div>
+
         </div><!-- colonna usata per inserire l'app -->
       </div><!-- Riga 2 usata per il contenuto-->
     </main>
