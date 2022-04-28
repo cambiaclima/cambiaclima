@@ -1,9 +1,9 @@
 <?php
 	$ID=$_POST['ID'];
   $IdCategoria=$_POST['categoria'];
-  $newCategoria=mysql_escape_string ($_POST['newCategoria']);
-  $titolo=mysql_escape_string ($_POST['titolo']);
-  $contenuto=mysql_escape_string ($_POST['contenuto']);
+  $newCategoria=$_POST['newCategoria'];
+  $titolo=$_POST['titolo'];
+  $contenuto=$_POST['contenuto'];
 
 	//Connesione al server
 	require '../../includes/dbconnect.php';

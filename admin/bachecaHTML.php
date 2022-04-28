@@ -52,8 +52,8 @@ $currentPage = 'Bacheca';
 					'Articoli' => 'articoli/',
 					// 'Dati Co2' => 'dati_co2/',
 					// 'Agenti inquinanti' => 'inquinanti/',
-					// 'Glossario' => 'glossario/',
-					// 'Approfondimenti Scientifici' => 'approfondimenti/',
+					 'Glossario' => 'glossario/',
+					'Approfondimenti Scientifici' => 'approfondimenti/',
 					// 'SlideShow' => 'slideshow/', parti superflue o non funzionanti, ripararle e poi pubblicarle di nuovo
 				);
 

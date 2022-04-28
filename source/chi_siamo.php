@@ -22,14 +22,14 @@
 			</div>
       <p class="pl-3 introduzione">
       				  <?php
-                      $testo="Siamo una classe di quinta superiore d'indirizzo dell'istituto IIS Falcone-Righi.
-                      Abbiamo realizzato questo sito con il progetto di parlare dei cambiamenti climatici con
-                      l'obbiettivo di far capire a tutti cosa siano, da cosa sono causati, perchè sono così importanti e
-                      che cosa possiamo fare per contrastarli.
-                      A questo proposito un ottimo modello è la soluzione che ha adottato la città di Friburgo che, abbiamo riportato in una pagina dedicata.
-                      Un altro argomento di cui ci siamo occupati sono il crowdfunding e il progetto PrepAIR.
-                      Inoltre abbiamo inserito strumenti che permettono di calcolare a seguito di un certo numero di consumi di c02 quanto servirebbe per annullarne l'effetto e dei giochi inerenti all'argomento.
-                      Qui sotto potete trovare il link della nostra app:
+                      $testo="
+Siamo una classe di quinta superiore d’indirizzo informatico dell'IIS Falcone-Righi.
+Abbiamo realizzato questo sito con il progetto di parlare dei cambiamenti climatici con l'obiettivo di far capire a tutti cosa siano, da cosa sono causati, perchè sono così importanti e che cosa possiamo fare per contrastarli.
+A questo proposito un ottimo modello è la soluzione che ha adottato la città di Friburgo che abbiamo riportato in una pagina dedicata.
+Altri argomenti di cui ci siamo occupati sono i progetti Crowdfunding e PrepAIR.
+Inoltre abbiamo inserito strumenti che permettono di calcolare, a seguito di un certo numero di consumi di CO2, quanto servirebbe per annullarne l'effetto e dei giochi inerenti all’argomento.
+Qui sotto potete trovare il link della nostra app:
+
                       ";
                       $testo=popups($testo);
               		  print nl2br($testo);

@@ -18,55 +18,11 @@
 		<!-- Main
 		<main class="container-md" role="main"> -->
 		<section id="facilities">
-		<div class="container">
-			<div class="title">
-				<h1>CAMBIACLIMA</h1>
-				<p>ULTIME NOTIZIE</p>
-			</div>
-			<?php						//Connesione al server
-						require 'includes/dbconnect.php';
-
-	          $sql = "SELECT * FROM articolo ORDER BY data_pubbli desc";
-	          $result = $conn->query($sql);
-	          if ($result->num_rows > 0) {
-	            $i=0;
-	            while($row = $result->fetch_assoc()) {
-					print '
-					<div class="card mb-3 shadow-sm" >
-						<a href="articoli/'.$row["IdArt"].'.php">
-							<div class="row no-gutters">
-							<div class="col-sm-8">
-								<div class="card-body">
-									<h5 class="card-title">'.$row["Titolo"].'</h5>
-									<p class="card-text">'.$row["breve_descr"].'</p>
-									<p class="card-text"><small class="text-muted">Ultimo aggiornamento: '.$row["data_pubbli"].'</small></p>
-								</div>
-							</div>
-								<div class="col-sm-4">
-									<div style="background: url(articoli/'.$row["IdArt"].'/'.$row["immagine"].') no-repeat center; background-size:cover;" class="card-img-top w-100 h-100"></div>
-								</div>
-							</div>
-						</a>
-					</div>'."\n";
-	              $i++;
-	              if($i==3)
-	                break;
-	            }
-	          }else{
-				print '<div class="alert alert-info alert-dismissible fade show" role="alert">
-							<strong>Non ci sono articoli nel database!</strong> Riprovare pi&ugrave tardi.
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-							</button>
-						</div>';
-			}
-			
-			?>
-		</div>
 		</section>		
 		<section id="facilities">
 		<div class="container">
 			<div class="title">
+ 			
 				<p>I NOSTRI PROGETTI</p>
 			</div>
 			<div class="row">
@@ -141,12 +97,61 @@
 					</div>
 			</section>
 			</div>
+
+
+<div class="container">
+			<div class="title">
+				<p>ULTIME NOTIZIE</p>
+			</div>
+			<?php						//Connesione al server
+						require 'includes/dbconnect.php';
+
+	          $sql = "SELECT * FROM articolo ORDER BY data_pubbli desc";
+	          $result = $conn->query($sql);
+	          if ($result->num_rows > 0) {
+	            $i=0;
+	            while($row = $result->fetch_assoc()) {
+					print '
+					<div class="card bg-transparent" >
+						<a href="articoli/'.$row["IdArt"].'.php">
+							<div class="row no-gutters">
+							<div class="col-sm-8">
+								<div class="card bg-transparent border-light text-white">
+									<h5 class="card-title bg-transparent">'.$row["Titolo"].'</h5>
+									<p class="card-text bg-transparent">'.$row["breve_descr"].'</p>
+									<p class="card-text"><small class="text-muted">Ultimo aggiornamento: '.$row["data_pubbli"].'</small></p>
+								</div>
+							</div>
+								<div class="col-sm-4 col-sm-4 card bg-transparent rounded text-white">
+									<div style="background: url(articoli/'.$row["IdArt"].'/'.$row["immagine"].') no-repeat center; background-size:cover;" class="card-img-top w-100 h-100"></div>
+								</div>
+							</div>
+						</a>
+					</div>'."\n";
+	              $i++;
+	              if($i==3)
+	                break;
+	            }
+	          }else{
+				print '<div class="alert alert-info alert-dismissible fade show" role="alert">
+							<strong>Non ci sono articoli nel database!</strong> Riprovare pi&ugrave tardi.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>';
+			}
+			
+			?>
+		</div>
 			<div class="bg">
 			</div>
+
+
 		<!-- </main> -->
 		<!-- Footer -->
 		<?php require 'includes/footer.php';?>
 </div>
+
 <!-- //ciao -->
 	</body>
 </html>

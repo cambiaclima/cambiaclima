@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <title>Snake cambiaclima</title>
   <link rel="stylesheet" href="./style.css">
- 
 </head>
 <body class="container" style="color:white">		
 	<div class="container fluid"> <h1 style="color:white; text-align: center;">Mangia tutte le molecole di CO2 per convertirle in ossigeno e salvare il pianeta</h1><br> 
-	<h2 style="color:white; text-align: center;">Usa le frecce della tastiera per iniziare una partita e per muoverti</h2><br>
+	<h2 style="color:white; text-align: center; margin-top:30%	">Usa le frecce della tastiera per iniziare una partita e per muoverti</h2><br>
 	<div class="col-sm">
   	<div class="row">
+	<div class="form-group">
 		<form action="db_punteggio.php" method="POST" name="pointsDB">
 				inserisci il tuo nome (senza spazi)<input type="text" name="player_name" id="name_box"  class="form-control" value=""><br>
-				<input type="button" value="ottieni il tuo punteggio" class="btn btn-secondary btn-sm" onclick="getScore()">
+				<input  type="button" value="ottieni il tuo punteggio" class="btn btn-secondary btn-sm" onclick="getScore()">
 				<input type="text" name="player_score" id="score_box" class="btn btn-secondary btn-sm"   value="0" readonly><br>
 				<input type="submit" value="salva il tuo punteggio"><br><br>
 
 				<a href="points_history.php" target="_blank" style="color:white"> clicca per vedere la classifica dei miglior punteggi</a><br>
 		</form>
+</div>
 
 	<div>
 	
