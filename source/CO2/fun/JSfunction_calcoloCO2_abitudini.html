@@ -13,31 +13,33 @@
     <div class='container shadow-sm text-white rounded-lg text-center'>
         <h1>Calcolatore di Co2</h1>
         <h3>Quanti kilometri percorri in auto in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='auto' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='auto' type='number' value='0' min='0'/><br>
         <h3>Quanti kilometri percorri in scooter in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='scooter' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='scooter' type='number' value='0' min='0'/><br>
         <h3>Quanti kilometri percorri in autobus in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='autobus' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='autobus' type='number' value='0' min='0'/><br>
         <h3>Quanti kilometri percorri in tram in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='tram' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='tram' type='number' value='0' min='0'/><br>
          <h3>Quanti kilometri percorri in treno settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='treno' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='treno' type='number' value='0' min='0'/><br>
         <h3>Quanti chilogrammi di  carne consumi in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  id='carne' type='number' value='0' />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  id='carne' type='number' value='0' min='0'/><br>
         <h3>Quanti chilogrammi di  pasta consumi in una settimana?</h3>
-        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='pasta' type='number' value='0' />
-
-        <br />
-        <br />
-        <button type="button" class="btn btn-secondary btn-lg" onclick='calcCO2()'>Calcolo il totale delle emissioni di CO2</button>
-        <br />
-        <br />
+        <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id='pasta' type='number' value='0' min='0'/><br>
     </div>
     </div>
     <br />
     <div class="col-sm">
     <div class='container text-center'>
-   
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <button type="button" class="btn btn-secondary btn-lg" onclick='calcCO2()'>Calcolo il totale delle emissioni di CO2</button>
+        <br />
+        <br />
         <h2>Co2 emessa al mese:</h2>
         <h1 id='result' class='bg-dark rounded-lg'></h1>
         <h3>kg CO2</h3>
@@ -63,13 +65,14 @@
         var carne = document.getElementById('carne');
      
         function calcCO2() {
-            if(auto.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(scooter.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(autobus.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(tram.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(treno.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(carne.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
-	        else if(pasta.value <= 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore di 0");
+            if (auto.value == 0 && scooter.value == 0 && autobus.value == 0 && tram.value == 0 && treno.value == 0 && carne.value == 0 && pasta.value == 0) alert("Input non valido. Inserisci almeno un campo maggiore di 0");
+            else if(auto.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(scooter.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(autobus.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(tram.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(treno.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(carne.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
+	        else if(pasta.value < 0) alert("Input non valido. Deve essere necessariamente un numero intero maggiore o uguale a 0");
             else {
                 var aut=auto.value;
                 var sco = scooter.value;
@@ -79,24 +82,26 @@
                 var carn = carne.value;
                 var past = pasta.value;
                 let comp="";
-                var risultato=(aut*0.32+sco*0.11+autob*0.1+tra*0.04+carn*2.5+past*0.27+tren*0.04)*4;
-            
-                if(risultato<10 || risultato<54){
-                    comp="Banano";
-                }else if( risultato<99){
-                    comp="Caffe'";
-                    }else if( risultato<199){
-                        comp="Moringa";
-                    } else if( risultato<499){
-                        comp="Cedro";
-                        }else if( risultato<699){
-                            comp="Mango";
-                            }else if(risultato<1999){
-                                comp="Fromager";
-                            }else if(risultato>3000){
-                                comp="Baobab";
-                            }
-                document.getElementById('result').innerHTML = risultato;
+                var risultato=(aut*0.32+sco*0.11+autob*0.1+tra*0.04+carn*2.5+past*0.27+tren*0.04)*4; 
+
+                if(risultato <= 0){
+                    comp="Inserisci correttamente valori";
+                }else if(risultato<10 || risultato<54){
+                        comp="Banano";
+                    }else if( risultato<99){
+                        comp="Caffe'";
+                        }else if( risultato<199){
+                            comp="Moringa";
+                        } else if( risultato<499){
+                            comp="Cedro";
+                            }else if( risultato<699){
+                                comp="Mango";
+                                }else if(risultato<1999){
+                                    comp="Fromager";
+                                }else if(risultato>3000){
+                                    comp="Baobab";
+                                }
+                if(risultato > 0)document.getElementById('result').innerHTML = risultato;
                 document.getElementById('result1').innerHTML = comp;
                 }
         }
